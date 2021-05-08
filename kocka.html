@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="kalkul.js"></script>
+    <title>Kocka</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100%;
+            background: url(img/overlay.png), url(img/hatter.jpg);
+            background-position: top;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid banner">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar">
+                    <div class="navbar-brand">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html"><button type="button" class="btn btn-secondary">Kezdőlap</button></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="sikidomok.html"><button type="button" class="btn btn-secondary">Síkidomok</button></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="testek.html"><button type="button" class="btn btn-secondary">Testek</button></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="card bg-dark col-lg-3 kocka_felszinkartya">
+
+                <div class="card-body bg-dark text-white ">
+                    <h4 class="card-title">Felszín számítás</h4>
+                    <p class="card-text">A = 6 * a<sup>2</sup> </p>
+                    <img src="img/kocka.png" class="kalk_kocka" alt="kocka"> <br> <br>
+                    <form>
+                        <div>
+                            <label for="KockaFelszinA">A oldal:</label><br>
+                            <input class="form-control" type="number" id="KockaFelszinA" min="0" oninput="FelszinKocka()"><br>
+                            <label for="Felszin">Felszín:</label>
+                            <input type="text" class="form-control" id="Felszin" disabled>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="card bg-dark col-lg-3 kocka_terfogatkartya">
+
+                <div class="card-body bg-dark text-white ">
+                    <h4 class="card-title">Térfogat számítás</h4>
+                    <p class="card-text">V = a<sup>3</sup> </p>
+                    <img src="img/kocka.png" class="kalk_kocka" alt="Kocka"> <br> <br>
+                    <form>
+                        <div>
+                            <label for="KockaTerfogatA">A oldal:</label><br>
+                            <input class="form-control" type="number" id="KockaTerfogatA" min="0" oninput="TerfogatKocka()"><br>
+                            <label for="Terfogat">Térfogat:</label>
+                            <input type="text" class="form-control" id="Terfogat" disabled>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

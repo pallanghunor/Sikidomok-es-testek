@@ -1,0 +1,152 @@
+.navitem {
+    color: black;
+}
+
+.sikidomok_kep {
+    margin-top: 250px;
+    margin-left: 300px;
+}
+
+
+.wrapper{
+    font-family: sans-serif;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.esport_faze{
+    height: 250px;
+    width: 350px;
+    cursor: pointer;
+}
+
+.esport_img{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transform: .5s ease;
+    margin-top: 225px;
+    transition: all 0.4s ease-in-out;
+}
+.content{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-size: 60px;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.content a{
+    font-size: 24px;
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.overlay{
+    opacity: 0;
+}
+
+.wrapper:hover .esport_img{
+    opacity: .5;
+    transform: scale(1.1);
+}
+
+.wrapper:hover .overlay{
+    opacity: 1;
+}
+
+.banner{
+    height: 100vh;
+    width: 100%;
+    background: url(img/overlay.png),url(img/hatter.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.negyzet {
+    margin-left: 0 auto;
+}
+
+.content_negyzet {
+    top: 50%;
+    left: 50%;
+}
+
+.kalk_negyzet {
+    width: 200px;
+}
+
+.negyzet_keruletkartya {
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.negyzet_teruletkartya {
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.teglalap {
+    margin-left: 0 auto;
+    width: auto;
+}
+
+.content_teglalap {
+    top: 50%;
+    left: 65%;
+}
+
+.teglalap_keruletkartya {
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.kalk_teglalap {
+    width: 200px;
+}
+
+.teglalap_teruletkartya {
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.kocka_felszinkartya {
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.kalk_kocka {
+    width: 200px;
+}
+
+.kocka_terfogatkartya {
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.teglatest_felszinkartya {
+    margin-left: 50px;
+}
+
+.teglatest_terfogatkartya {
+    margin-left: 50px;
+}
+
+.kalk_teglatest {
+    width: 200px;
+}
+
+.kocka {
+    top: auto;
+    left: 100px;
+}

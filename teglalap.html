@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="kalkul.js"></script>
+    <title>Téglalap</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100%;
+            background: url(img/overlay.png), url(img/hatter.jpg);
+            background-position: top;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid banner">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar">
+                    <div class="navbar-brand">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html"><button type="button" class="btn btn-secondary">Kezdőlap</button></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="sikidomok.html"><button type="button" class="btn btn-secondary">Síkidomok</button></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="testek.html"><button type="button" class="btn btn-secondary">Testek</button></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="card bg-dark col-lg-3 teglalap_keruletkartya">
+
+                <div class="card-body bg-dark text-white ">
+                    <h4 class="card-title">Kerület számítás</h4>
+                    <p class="card-text">K = 2 * (a + b) </p>
+                    <img src="img/teglalap.png" class="kalk_teglalap" alt="Téglalap"> <br> <br>
+                    <form>
+                        <div>
+                            <label for="TeglalapKeruletA">A oldal:</label><br>
+                            <input class="form-control" type="number" id="TeglalapKeruletA" min="0" oninput="KeruletTeglalap()"><br>
+                            <label for="TeglalapKeruletB">B oldal:</label><br>
+                            <input class="form-control" type="number" id="TeglalapKeruletB" min="0" oninput="KeruletTeglalap()"><br>
+                            <label for="Kerulet">Kerület:</label>
+                            <input type="text" class="form-control" id="Kerulet" disabled>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="card bg-dark col-lg-3 teglalap_teruletkartya">
+
+                <div class="card-body bg-dark text-white ">
+                    <h4 class="card-title">Terület számítás</h4>
+                    <p class="card-text">T = a * b </p>
+                    <img src="img/teglalap.png" class="kalk_teglalap" alt="Téglalap"> <br> <br>
+                    <form>
+                        <div>
+                            <label for="TeglalapTeruletA">A oldal:</label><br>
+                            <input class="form-control" type="number" id="TeglalapTeruletA" min="0" oninput="TeruletTeglalap()"><br>
+                            <label for="TeglalapTeruletB">B oldal:</label><br>
+                            <input class="form-control" type="number" id="TeglalapTeruletB" min="0" oninput="TeruletTeglalap()"><br>
+                            <label for="Terulet">Terület:</label>
+                            <input type="text" class="form-control" id="Terulet" disabled>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
